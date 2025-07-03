@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar{
+  width: 31%;
+  height: 100vh;
+  position: fixed;
+  background-color: white;
+  left: -100%;
+  transition: all 0.5s ease;
+  z-index: 1000; 
+}
+
+
+.active{
+  left: 0;
+}
+
+/* category button  */
+.ctgrybutton
+{
+  background: #dbd4d4;
+  border-radius: 100%;
+  font-size: 25px;
+  padding: 4px;
+  color: orange;
+  
+}
+.overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem; 
+}
+.overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:  linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 40%, rgba(0, 0, 0, 0.8) 90%);
+  border-radius: 0.5rem;
+  z-index: 1;
+}
+/* overlat section for offer page */
+.overlay_offer{
+  position: relative;
+}
+.offer_sec
+{
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  font-size: 30px;
+  color: white;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
