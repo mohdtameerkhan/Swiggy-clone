@@ -43,8 +43,8 @@ export default function Header() {
   };
   const handleSelectSuggestion = (address) => {
     setFinalAddress(address);
-    setLocation(address); // input box में वही सेट करना
-    setSuggestions([]);   // suggestions छुपा देना
+    setLocation(address); 
+    setSuggestions([]);   
   };
 
   
